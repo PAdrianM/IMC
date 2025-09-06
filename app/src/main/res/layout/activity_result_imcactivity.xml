@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/resultIMC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:orientation="vertical"
+    tools:context=".imccalculator.ResultIMCActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/tilte_result"
+        android:textColor="@color/white"
+        android:textSize="38sp" />
+
+    <!-- CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewMale"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/background_component_selected"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                tools:text="Normal" />
+
+            <TextView
+                android:id="@+id/textViewIMC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:gravity="center"
+                android:text="20.0"
+                android:textColor="@color/white"
+                android:textSize="86sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="62dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:textColor="@color/title_text"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="Su IMC es 20.0, lo que indica que su peso está en la categoría de Bajo Peso" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/buttonReCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/calculate" />
+
+</LinearLayout>

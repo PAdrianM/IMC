@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">IMC APP</string>
+
+
+    <!--imc calculator strings-->
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="calculate">Calcular</string>
+
+    <!--result activity-->
+    <string name="tilte_result">Tu resultado</string>
+    <string name="title_low_weight">Bajo Peso</string>
+    <string name="title_healthy_weight">Peso Saludable</string>
+    <string name="title_overweight">Sobrepeso</string>
+    <string name="title_obesity">Obesidad</string>
+
+    <string name="error_message">Verifique que los datos ingresados esten correctos</string>
+    <string name="title_error">Error</string>
+    <string name="error_number">0.00</string>
+
+
+</resources>
